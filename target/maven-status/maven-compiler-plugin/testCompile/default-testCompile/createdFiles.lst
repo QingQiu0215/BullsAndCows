@@ -1,0 +1,3 @@
+com\sg\bullscows\dao\GameDaoDBImplTest.class
+com\sg\bullscows\dao\RoundDaoDBImplTest.class
+com\sg\bullscows\service\BullsCowsServiceTest.class

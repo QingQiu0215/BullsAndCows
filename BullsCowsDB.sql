@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS BullsCows;
+
+CREATE DATABASE BullsCows;
+
+USE BullsCows;
+
+CREATE TABLE game (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Answer VARCHAR(10) NOT NULL,
+    GameStatus VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE round (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Guess int NOT NULL,
+    GuessTime DATETIME,
+    Result VARCHAR(10) NOT NULL, 
+    GameId INT NOT NULL,
+    FOREIGN KEY (GameId) REFERENCES game(Id)
+);
